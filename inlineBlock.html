@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- //inline element can be used inside a block element but block element cannot be used inside an inline element. -->
+    <h2>My Inline Block Example</h2>
+    <p>
+      the inline-block element is a combination of both inline and block
+      elements. It allows you to set a width and height on an element, but it
+      still flows with the text like an inline element.
+    </p>
+    <div
+      style="
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        padding: 10px;
+        margin: 10px;
+      "
+    >
+      This is an inline-block element.
+    </div>
+    <div
+      style="
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        background-color: lightcoral;
+        padding: 10px;
+        margin: 10px;
+      "
+    >
+      This is another inline-block element.
+    </div>
+    <div style="display: flex; padding: 30px; gap: 20px;">
+      <div style="height: 100px; background-color: lightgray ; width: 200px;"></div>
+      <div style="height: 100px; background-color: rgb(209, 59, 59) ; width: 200px;"></div>
+      <div style="height: 100px; background-color: rgb(25, 69, 216) ; width: 200px;"></div>
+      <div style="height: 100px; background-color: rgb(22, 255, 197) ; width: 200px;"></div>
+      
+    </div>
+  </body>
+</html>
