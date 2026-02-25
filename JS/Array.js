@@ -15,6 +15,13 @@ const uniqueNumbers = numbers.filter((value, index, self) => {
 console.log(uniqueNumbers); // Output: [1, 2, 3, 4, 5]
 
 
+//unique values not using Set
+const uniqueNumbers2 = numbers.reduce((unique, item) => {
+  return unique.includes(item) ? unique : [...unique, item];
+}, []);
+console.log(uniqueNumbers2); // Output: [1, 2, 3, 4, 5]
+
+
 //separate even and odd numbers
 const mixedNumbers = [1, 2, 3, 4, 5, 6];
 const evenNumbers = mixedNumbers.filter(num => num % 2 === 0);
