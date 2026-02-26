@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Sign Up</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: white;
+        padding: 20px;
+        width: 380px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #1877f2;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 20px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin: 6px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .name-fields {
+        display: flex;
+        gap: 10px;
+      }
+
+      .name-fields input {
+        width: 50%;
+      }
+
+      .dob {
+        display: flex;
+        gap: 10px;
+      }
+
+      .dob select {
+        width: 33%;
+      }
+
+      .gender {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #42b72a;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #36a420;
+      }
+
+      /* Responsive */
+      @media (max-width: 480px) {
+        .container {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>facebook</h1>
+      <h2>Create a new account</h2>
+      <p style="text-align: center">It's quick and easy.</p>
+
+      <form>
+        <div class="name-fields">
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Surname" />
+        </div>
+
+        <input type="text" placeholder="Mobile number or email address" />
+        <input type="password" placeholder="New password" />
+
+        <label>Date of birth</label>
+        <div class="dob">
+          <select>
+            <option>Day</option>
+          </select>
+          <select>
+            <option>Month</option>
+          </select>
+          <select>
+            <option>Year</option>
+          </select>
+        </div>
+
+        <label>Gender</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" /> Female</label>
+          <label><input type="radio" name="gender" /> Male</label>
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
