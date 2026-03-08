@@ -31,3 +31,6 @@ const person = {
 }
 
 const {name, address:{home:{country}}} = person;
+
+console.log(name);
+console.log(country); 
