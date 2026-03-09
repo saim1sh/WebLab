@@ -37,3 +37,13 @@ console.log(country);
 
 console.log(Object.keys(person));
 console.log(Object.values(person));
+
+//print all keys and values of object
+for(let key in person){
+   console.log(key + ": " + person[key]);
+}
+
+//print all keys and values of nested object
+for(let key in person.address){
+   console.log(key + ": " + person.address[key]);
+}
