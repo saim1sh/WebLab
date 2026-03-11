@@ -62,22 +62,23 @@ function allKeys(obj) {
 
 allKeys(person);
 
-
 function flattenObject(obj, path = "", result = []) {
+  for (let key in obj) {
+    const value = obj[key];
+    const newPath = path ? `${path}.${key}` : key;
 
-   for (let key in obj) {
+    result.push(newPath);
 
-      const value = obj[key]
-      const newPath = path ? `${path}.${key}` : key
+    if (typeof value === "object" && value !== null) {
+      flattenObject(value, newPath, result);
+    }
+  }
 
-      result.push(newPath)
-
-      if (typeof value === "object" && value !== null) {
-         flattenObject(value, newPath, result)
-      }
-   }
-
-   return result
+  return result;
 }
 
-console.log(flattenObject(person))
+console.log(flattenObject(person));
+
+Object.entries(person).forEach(([key, value]) => {
+  console.log(`${key}: ${value}`);
+});
